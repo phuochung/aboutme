@@ -1,0 +1,26 @@
+<urlrewrite>
+	<rule>
+		<from>trang-chu$</from>
+		<to>/public/index</to>
+	</rule>
+	<rule>
+		<from>^/chi-tiet/([0-9]+)/(.*).html$</from>
+		<to>/public/detail?idA=$1</to>
+	</rule>
+	<rule>
+		<from>^/danh-muc/([0-9]+)/page/([0-9]+)$</from>
+		<to>/public/acticleofcat?idC=$1&amp;page=$2</to>
+	</rule>
+	<rule>
+		<from>^/danh-muc/([0-9]+)/(.*).html$</from>
+		<to>/public/acticleofcat?idC=$1</to>
+	</rule>
+	<rule>
+		<from>^/tim-kiem$</from>
+		<to>/public/find</to>
+	</rule>
+	
+	
+</urlrewrite>
+	
+	
